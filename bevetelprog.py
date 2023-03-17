@@ -16,11 +16,11 @@ from firebase import firebase
 
 
 
-working_directory_DBJSONdir = os.path.join(os.getcwd(), "attendance-87853.json") #dir a jsonhoz
-cred = credentials.Certificate('./attendance-87853.json')
+working_directory_DBJSONdir = os.path.join(os.getcwd(), "FIREBASE_JSON.json") #dir a jsonhoz
+cred = credentials.Certificate('./FIREBASE_JSON.json')
 default_app = firebase_admin.initialize_app(cred)
 db = firestore.client()
-firebase = firebase.FirebaseApplication('https://attendance-87853-default-rtdb.europe-west1.firebasedatabase.app/', None)
+firebase = firebase.FirebaseApplication('FIREBASE_URL', None)
 
 
 
